@@ -29,7 +29,7 @@ lista::lista()
 
 void lista::insertar_nodo(int N){
     int dato;
-    int a =0;
+   
     for(int i=0; i <N; i++){
         int a = 0;
         
@@ -44,13 +44,13 @@ void lista::insertar_nodo(int N){
                     break;
                 }
                 a=0;
-            }
+            }  
         }while(a!=0);
         
         /// Crear el nodo a insertar
         nuevo = new nodo();
-        nuevo->info = dato;
-        nuevo->sig = NULL;
+            nuevo->info = dato;
+            nuevo->sig = NULL;
         
         if(p==NULL){ /// Esta vacia la lista y hay que crearla
             p=nuevo;
